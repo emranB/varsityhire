@@ -1,0 +1,662 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+
+/*----------Default----------*/
+nav{
+	font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	opacity: 1;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+}
+nav ul{
+	list-style: none;
+	margin-bottom: 0;
+}
+nav ul li{
+	float: left;
+	height: 115px;
+	text-align: center;
+	color: white;
+}
+nav ul div.upperRow{
+	background: #262626;
+	font-size: 2.5em;
+	/*border-top: 1px solid #A5FFCE;*/
+	height: 120px;
+}
+nav ul div.lowerRow:not(.nav_img){
+	background: #E0E0E0;
+	color: black;
+	height: 45px;
+	line-height: 45px;
+}
+nav ul div.lowerRow li{
+	float: left;
+	height: 45px;
+	/*font-size: 1.2em;*/
+	z-index: 2;
+}
+
+nav ul div.lowerRow li.leftItems:nth-Child(1){ min-width: 14%; width: auto; }
+nav ul div.lowerRow li.leftItems:nth-Child(2){ min-width: 14%; width: auto; }
+nav ul div.lowerRow li.leftItems:nth-Child(3){ min-width: 14%; width: auto; }
+nav ul div.lowerRow li.leftItems:nth-Child(4){ min-width: 14%; width: auto; }
+nav ul div.lowerRow li.leftItems a{
+	font-family: "Lucida Bright", Georgia, serif;
+	color: #262626;
+	padding: 0 3%;
+	display: block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	letter-spacing: 1.5px;
+}
+nav ul div.lowerRow li.leftItems a:hover{
+	text-decoration: none;
+	font-weight: 600;
+	color: white;
+	text-shadow: 0 0 3px #262626;
+	letter-spacing: 2px;
+	border-top: 3px solid #262626;
+}
+a.selected{
+	font-weight: bold;
+	height: 45px;
+	text-shadow: 0 0 5px #262626 !important;
+	pointer-events: none;
+	border-top: 8px solid #262626;
+	/*background: #262626;*/
+	color: WHITE !important;
+	letter-spacing: 5px !important;
+}
+
+.submitBtn{
+	border: 0 solid white;
+	height: 60px;
+	width: 100%;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	color: #A5FFCE;
+	border-radius: 0 0 50% 50%;
+	background: #262626;
+	font-size: 1.2em;
+}
+.submitBtn:active{
+	background: #262626;
+	color: white;
+	border-radius: 0 0 100% 100%;
+	letter-spacing: 5px;
+	border: 0;
+}
+.submitBtn:hover{
+	background: #A5FFCE;
+	color: #262626;
+	border-top: 0 solid #262626;
+	text-shadow: 0 0 5px #A5FFCE;
+	letter-spacing: 5px;
+	height: 65px;
+}
+.submitBtn_alt:active{
+	background: #FF5E5F;
+	color: white;
+	border-radius: 0 0 100% 100%;
+	border: 0;
+}
+.submitBtn_alt:hover{
+	background: #FF5E5F;
+	color: #262626;
+	border-top: 0 solid #262626;
+	text-shadow: 0 0 5px white;
+	height: 65px;
+
+}
+/*----------Default----------*/
+
+/*----------Li > Menu----------*/
+nav ul li.menu{
+	width: 13%;
+}
+nav ul li.menu a{
+	height: 120px;
+	line-height: 120px;
+	color: #A5FFCE;
+	font-size: 1.5em;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+}
+nav ul li.menu a:hover{
+	color: white;
+	line-height: 135px;
+	text-shadow: 0 0 10px #a5ffce;
+	text-decoration: none;
+}
+nav ul li.menu a:active{
+	text-decoration: none;
+}
+/*----------Li > Menu----------*/
+
+/*----------Li > Title----------*/
+nav ul li.title{
+	color: #A5FFCE;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
+	width: 74%;
+	line-height: 120px;
+}
+nav ul li.title img{
+	width: 50px;
+	height: 55px;
+}
+
+nav ul li.title:hover{
+	text-shadow: 0 0 3px white;
+	letter-spacing: 5px;
+}
+nav ul li.title a{
+	font-family: "Lucida Bright", Georgia, serif;
+	font-size: 1em;
+	/*font-style: italic;*/
+	color: #A5FFCE;
+	letter-spacing: 2px;
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-ms-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+}
+
+nav ul li.title a:hover{
+	color: white;
+	text-decoration: none;
+	letter-spacing: 16px;
+	text-shadow: 0 0 15px #A5FFCE;
+}
+/*----------Li > Title----------*/
+
+/*----------Li > Register----------*/
+nav ul li.register{
+	width: 10%;
+}
+nav ul li.register a{
+	color: #262626;
+	text-shadow: 0 0 5px white;
+	padding: 0 15px;
+	position: absolute;
+	right: 20%;
+	top: 120px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	background: white;
+}
+nav ul li.register a:hover{
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 50%;
+	border-right: 5px solid #A5FFCE;
+	border-left: 5px solid #A5FFCE;
+	font-size: 0.9em;
+}
+nav ul li.register a:active{
+	text-decoration: none;
+}
+nav ul li.register a span:active{
+	text-decoration: none;
+}
+/*----------Li > Register----------*/
+
+/*----------Li > Login----------*/
+nav.navWithLogin ul li.login{
+	width: 20%;
+	float: right;
+	text-shadow: 0 0 10px black;
+	position: absolute;
+	right: 0;
+}
+nav.navWithLogin ul li.login:hover{
+	color: #262626;
+	cursor: pointer;
+}
+nav.navWithLogin ul li.login form{
+	display: none;
+	z-index: 2;
+}
+nav.navWithLogin ul li.login form input:not(.submitBtn){
+	width: 100%;
+	text-align: center;
+	background: #A5FFCE;
+	border: 0;
+}
+nav.navWithLogin ul li.login form input:focus{
+	background: #262626;
+	color: white;
+	font-weight: bold;
+	border: 0;
+}
+/*----------Li > Login----------*/
+
+/*----------Li > logout----------*/
+nav.navWithLogout ul li.logout div{
+	background: #a5ffce;
+}
+nav.navWithLogout ul li.logout{
+	color: white;
+	width: 20%;
+	position: absolute;
+	right: 0;
+}
+img.nav_img{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	top: 2.5px;
+	left: 10%;
+}
+nav.navWithLogout ul li.logout:hover{
+	color: #262626;
+	/*height: 450%;*/
+	cursor: pointer;
+}
+nav.navWithLogout ul li.logout form{
+	display: none;
+	z-index: 2;
+}
+nav.navWithLogout ul li.logout form div{
+	background: #A5FFCE;
+	z-index: 2;
+}
+nav.navWithLogout ul li.logout form p{
+	color: #262626;
+}
+nav.navWithLogout ul li.logout form input{
+	width: 100%;
+	text-align: center;
+}
+nav.navWithLogout ul li.logout form input:focus{
+	background: #262626;
+	color: white;
+	font-weight: bold;
+	border: 0;
+}
+/*----------Li > logout----------*/
+
+
+div.cPanel{
+	min-height: 100% !important;
+	width: 30%;
+	background: #262626;
+	display: block;
+	z-index: 2;
+	margin-left: -100%;
+	position: absolute;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+div.cPanel div:nth-Child(1){
+	background: #262626;
+	border: 0 solid #A5FFCE;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0 solid #A5FFCE;
+	border-bottom: 0 solid #A5FFCE;
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.4em;
+	color: #262626;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+div.cPanel div:nth-Child(1):hover{
+	background: #262626;
+	border: 0;
+	color: #FF5E5F;
+	/*border-bottom: 5px solid #A5FFCE;*/
+}
+
+a#closeCpanelLoggedIn, a#closeCpanelLoggedOut{
+	text-decoration: none;
+	overflow: auto;
+}
+a#closeCpanelLoggedIn span:nth-child(1), a#closeCpanelLoggedOut span:nth-child(1){
+	float: left;
+	margin-left: 50px;
+}
+a#closeCpanelLoggedIn span:nth-child(2), a#closeCpanelLoggedOut span:nth-child(2){
+	float: right;
+	padding: 0 10px;
+	line-height: 55px;
+	font-size: 2em;
+	color: #FF5E5F;
+	border: 5px solid #262626;
+	background: #262626;
+	height: 60px;
+}
+
+div.siteMap{
+	padding: 40px 20px;
+	font-size: 1.3em;
+	height: 70%;
+	overflow: auto;
+}
+
+div.siteMap hr{
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 80%;
+	border-radius: 0;
+	border: 2px solid black;
+}
+
+div.siteMapLoggedIn a:not(#closeCpanelLoggedIn), div.siteMapLoggedOut a:not(#closeCpanelLoggedOut){
+	color: #A5FFCE;
+	text-align: right;
+
+}
+
+div.siteMapLoggedIn a:not(#closeCpanelLoggedIn):hover, div.siteMapLoggedOut a:not(#closeCpanelLoggedOut):hover{
+	text-decoration: none;
+	text-shadow: 0 0 5px white;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+	/*----------Default----------*/
+	nav ul div.upperRow{
+		background: #262626;
+		font-size: 1.5em;
+	}
+	nav ul div.lowerRow:not(.nav_img){
+		background: #E0E0E0;
+		color: black;
+		height: 145px;
+		line-height: 45px;
+	}
+
+	nav ul div.lowerRow li.leftItems:nth-Child(1){ min-width: 100%; width: auto; }
+	nav ul div.lowerRow li.leftItems:nth-Child(2){ min-width: 100%; width: auto; }
+	nav ul div.lowerRow li.leftItems:nth-Child(3){ min-width: 100%; width: auto; }
+	nav ul div.lowerRow li.leftItems:nth-Child(4){ min-width: 100%; width: auto; }
+
+	a.selected{
+		font-weight: bold;
+		height: 45px;
+		text-shadow: 0 0 5px #262626 !important;
+		pointer-events: none;
+		border-top: 0 solid #262626 !important;
+		border-bottom: 0 solid #262626 !important;
+		color: WHITE !important;
+		letter-spacing: 5px !important;
+		background: #E0E0E0;
+	}
+
+	.submitBtn{
+		border: 0 solid white;
+		height: 60px;
+		width: 100%;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		color: #A5FFCE;
+		border-radius: 0 0 50% 50%;
+		background: #262626;
+		font-size: 1.2em;
+	}
+	.submitBtn:hover{
+		height: 60px;
+	}
+	.submitBtn_alt:hover{
+		height: 60px;
+	}
+	/*----------Default----------*/
+
+/*----------Li > Menu----------*/
+nav ul li.menu{
+	width: 30%;
+	font-size: 1.4em;
+}
+nav ul li.menu a{
+	height: 120px;
+	line-height: 135px;
+}
+nav ul li.menu a:active{
+	text-decoration: none;
+}
+/*----------Li > Menu----------*/
+
+
+/*----------Li > Title----------*/
+nav ul li.title{
+	width: 70%;
+}
+nav ul li.title img{
+	width: 30px;
+	height: 35px;
+}
+
+nav ul li.title:hover{
+	text-shadow: 0 0 3px white;
+	letter-spacing: 5px;
+}
+
+nav ul li.title a:hover{
+	letter-spacing: 8px;
+}
+/*----------Li > Title----------*/
+
+/*----------Li > Register----------*/
+nav ul li.register{
+	width: 100%;
+}
+nav ul li.register a{
+	position: absolute;
+	right: 10%;
+	left: 10%;
+	top: 80%;
+	width: 80%;
+}
+nav.navWithLogin ul li.register a{
+	position: absolute;
+	right: 10%;
+	left: 10%;
+	top: 62%;
+	width: 80%;
+}
+/*----------Li > Register----------*/
+
+/*----------Li > Login----------*/
+nav.navWithLogin ul li.login{
+	width: 100%;
+	z-index: 1;
+	float: right;
+	top: 210px;
+	text-shadow: 0 0 10px black;
+}
+nav.navWithLogin ul li.login:hover{
+	color: #262626;
+	cursor: pointer;
+}
+nav.navWithLogin ul li.login form{
+	display: none;
+	z-index: 2;
+}
+nav.navWithLogin ul li.login form input:not(.submitBtn){
+	width: 100%;
+	text-align: center;
+	background: #A5FFCE;
+	border: 0;
+}
+nav.navWithLogin ul li.login form input:focus{
+	background: #262626;
+	color: white;
+	font-weight: bold;
+	border: 0;
+}
+/*----------Li > Login----------*/
+
+
+
+
+
+
+
+
+/*----------Li > logout----------*/
+nav.navWithLogout ul div.lowerRow li.leftItems:nth-Child(1){ width: 100%; }
+nav.navWithLogout ul div.lowerRow li.leftItems:nth-Child(2){ width: 100%; }
+nav.navWithLogout ul div.lowerRow li.leftItems:nth-Child(3){ width: 100%; }
+nav.navWithLogout ul div.lowerRow li.leftItems:nth-Child(4){ width: 100%; }
+nav.navWithLogout ul div.lowerRow{
+	height: 280px;
+}
+nav.navWithLogout ul div.lowerRow li{
+	float: left;
+	height: 50px;
+	font-size: 1.2em;
+	z-index: 2;
+}
+nav.navWithLogout ul li.logout div{
+	background: #a5ffce;
+}
+nav.navWithLogout ul li.logout{
+	color: white;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	top: 400px;
+}
+img.nav_img{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	top: 2.5px;
+	left: 10%;
+}
+nav.navWithLogout ul li.logout:hover{
+	color: #262626;
+	cursor: pointer;
+}
+nav.navWithLogout ul li.logout form{
+	display: none;
+	z-index: 2;
+}
+nav.navWithLogout ul li.logout form div{
+	background: #A5FFCE;
+	z-index: 2;
+}
+nav.navWithLogout ul li.logout form p{
+	color: #262626;
+}
+nav.navWithLogout ul li.logout form input{
+	width: 100%;
+	text-align: center;
+}
+nav.navWithLogout ul li.logout form input:focus{
+	background: #262626;
+	color: white;
+	font-weight: bold;
+	border: 0;
+}
+/*----------Li > logout----------*/
+
+div.cPanel{
+	min-height: 100% !important;
+	width: 90%;
+	background: #262626;
+	display: block;
+	z-index: 2;
+	margin-left: -100%;
+	position: absolute;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+div.cPanel div:nth-Child(1){
+	background: #262626;
+	border: 0 solid #A5FFCE;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0 solid #A5FFCE;
+	border-bottom: 0 solid #A5FFCE;
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.4em;
+	color: #262626;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+}
+
+div.cPanel div:nth-Child(1):hover{
+	background: #262626;
+	border: 0;
+	color: #FF5E5F;
+	/*border-bottom: 5px solid #A5FFCE;*/
+}
+
+a#closeCpanelLoggedIn, a#closeCpanelLoggedOut{
+	text-decoration: none;
+	overflow: auto;
+}
+a#closeCpanelLoggedIn span:nth-child(1), a#closeCpanelLoggedOut span:nth-child(1){
+	float: left;
+	margin-left: 50px;
+}
+a#closeCpanelLoggedIn span:nth-child(2), a#closeCpanelLoggedOut span:nth-child(2){
+	float: right;
+	padding: 0 10px;
+	line-height: 55px;
+	font-size: 2em;
+	color: #FF5E5F;
+	border: 5px solid #262626;
+	background: #262626;
+	height: 60px;
+}
+
+div.siteMap{
+	padding: 40px 20px;
+	font-size: 1.3em;
+	height: 70%;
+	overflow: auto;
+}
+
+div.siteMap hr{
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 80%;
+	border-radius: 0;
+	border: 2px solid black;
+}
+
+div.siteMapLoggedIn a:not(#closeCpanelLoggedIn), div.siteMapLoggedOut a:not(#closeCpanelLoggedOut){
+	color: #A5FFCE;
+	text-align: right;
+
+}
+
+div.siteMapLoggedIn a:not(#closeCpanelLoggedIn):hover, div.siteMapLoggedOut a:not(#closeCpanelLoggedOut):hover{
+	text-decoration: none;
+	text-shadow: 0 0 5px white;
+}
+
+}
